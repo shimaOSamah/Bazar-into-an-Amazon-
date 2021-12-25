@@ -107,7 +107,7 @@ def order(id):
         return {"status":"fail, all soled"}
     
     q-=1
-    r = requests.put("http://192.168.187.130/forward/"+str(id)+"/"+str(q)) 
+    r = requests.put("http://192.168.187.130:5000/forward/"+str(id)+"/"+str(q)) 
 
     js = r.json()
     if(js["status"] == "done"):
