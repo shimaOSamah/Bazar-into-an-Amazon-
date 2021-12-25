@@ -107,7 +107,7 @@ def order(id):
     
     q-=1
 
-    r = requests.put("http://192.168.187.129/alert/"+str(id)+"/"+str(q))
+    r = requests.put("http://192.168.187.129:5000/alert/"+str(id)+"/"+str(q))
     js = r.json() 
 
     if(js["status"] == "done"):
