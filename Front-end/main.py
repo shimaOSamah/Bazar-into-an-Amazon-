@@ -7,8 +7,8 @@ import re
 cach = {}
 balanc = {'rep1': 0, 'rep2': 0}
 
-rep1 = "192.168.187.130"
-rep2 = "192.168.187.129"
+rep1 = "192.168.187.130:5000"
+rep2 = "192.168.187.129:5000"
 
 def foo():
     return request.json['inputVar']
